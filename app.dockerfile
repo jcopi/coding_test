@@ -2,6 +2,7 @@ FROM golang:1.16.7-alpine3.14 as golang
 
 WORKDIR /go/src/github.com/jcopi/coding_test
 COPY main.go .
+COPY backend.go .
 COPY go.mod .
 
 RUN apk add --update git gcc
